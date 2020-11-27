@@ -1,23 +1,25 @@
-name: HelpModifier
+name: VersionModifier
 version: 2.0
 author: applqpak
 authors: [applqpak, IceCruelStuff]
 api: 3.14.0
-main: HelpModifier\Main
+main: VersionModifier\Main
 commands:
-  enablehelp:
-    description: Enables help
-    permission: help.enable
+  enableversion:
+    description: Enables customized version
+    permission: version.enable
+    aliases: [enablever]
 
-  disablehelp:
-    description: Disables help
-    permission: help.disable
+  disableversion:
+    description: Disables customized version
+    permission: version.disable
+    aliases: [disablever]
 
 permissions:
-  help.enable:
-    description: Allows user to use /enablehelp
+  version.enable:
+    description: Allows user to use /enableversion
     default: op
 
-  help.disable:
-    description: Allows user to use /disablehelp
+  version.disable:
+    description: Allows user to use /disableversion
     default: op
