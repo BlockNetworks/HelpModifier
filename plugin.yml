@@ -1,7 +1,23 @@
 name: HelpModifier
-version: 1.0.0
+version: 2.0
 author: applqpak
-api:
-- 1.0.0
-- 2.0.0
+authors: [applqpak, IceCruelStuff]
+api: 3.14.0
 main: HelpModifier\Main
+commands:
+  enablehelp:
+    description: Enables help
+    permission: help.enable
+
+  disablehelp:
+    description: Disables help
+    permission: help.disable
+
+permissions:
+  help.enable:
+    description: Allows user to use /enablehelp
+    default: op
+
+  help.disable:
+    description: Allows user to use /disablehelp
+    default: op
